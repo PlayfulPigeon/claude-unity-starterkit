@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unity status:*)",
+      "Bash(unity list:*)",
+      "Bash(unity command:*)",
+      "Bash(unity pipeline list:*)",
+      "Bash(unity editors:*)",
+      "Bash(unity projects info:*)"
+    ]
+  }
+}
