@@ -6,7 +6,10 @@
       "Bash(unity command:*)",
       "Bash(unity pipeline list:*)",
       "Bash(unity editors:*)",
-      "Bash(unity projects info:*)"
+      "Bash(unity projects info:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git ls-files:*)"
     ]
   }
 }

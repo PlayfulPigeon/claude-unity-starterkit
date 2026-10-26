@@ -75,7 +75,8 @@ claude-unity-starterkit/
 │   └── new-project-2d.ps1              # 2D (Universal 2D) 래퍼
 └── template/                           # 생성되는 프로젝트에 복사되는 파일
     ├── CLAUDE.md                       # Claude Code 작업 지침 (프로젝트 루트)
-    ├── .claude/settings.json           # unity 명령 허용 목록
+    ├── .claude/settings.json           # unity·git 읽기 명령 허용 목록
+    ├── .claude/agents/                 # 서브에이전트 (성능 점검, 커밋 전 검사, 테스트 작성)
     ├── .gitignore                      # 공식 Unity.gitignore 다운로드 실패 시 대체용
     └── Assets/Editor/StarterKit/
         ├── MultiplayerPackageInstaller.cs   # 첫 실행 때 Multiplayer Center 설치 + 창 열기
