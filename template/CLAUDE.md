@@ -7,6 +7,7 @@ Unity 6 프로젝트입니다. 이 파일은 Claude Code가 이 프로젝트에�
 - 씬, GameObject, 프리팹, 에셋을 수정하기 전에 `unity status`로 연결된 Editor가 있는지 확인합니다.
 - Editor가 연결되어 있으면 `unity command`로 조작합니다. `.unity`, `.prefab`, `.asset` YAML을 직접 편집하지 않습니다.
 - Editor가 여러 개 열려 있으면 `--project-path <이 프로젝트 경로>`를 붙입니다.
+- `.claude/hooks/guard-unity-files.ps1` 훅이 `.unity`, `.prefab`, `.asset`, `.meta` 직접 편집과 `Packages/manifest.json`, `Library/`, `Temp/` 수정을 막습니다. 세션 시작 시 `unity status` 결과는 `unity-status.ps1` 훅이 알려 줍니다.
 - 컴파일 에러로 Safe Mode에 들어가 연결이 안 되면 `unity pipeline list`로 확인하고, C# 에러를 고친 뒤 Unity를 다시 엽니다.
 
 ## 멀티플레이어

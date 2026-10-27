@@ -214,6 +214,7 @@ $claudeDir = Join-Path $projectDir '.claude'
 New-Item -ItemType Directory -Force -Path $claudeDir | Out-Null
 Copy-Item -Force (Join-Path $templateDir '.claude\settings.json') (Join-Path $claudeDir 'settings.json')
 Copy-Item -Recurse -Force (Join-Path $templateDir '.claude\agents') $claudeDir
+Copy-Item -Recurse -Force (Join-Path $templateDir '.claude\hooks') $claudeDir
 
 Push-Location $projectDir
 try {
